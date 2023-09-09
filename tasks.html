@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from smarthr.dreamguystech.com/mobile/pwa/template/tasks.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 08 Sep 2023 12:52:11 GMT -->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, minimal-ui, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#3a57c4">
+<title>SmartHR - PWA HTML Mobile Template</title>
+
+<link rel="manifest" href="manifest.json">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="SmartHR - PWA Mobile Template">
+<link rel="apple-touch-icon" href="assets/img/icons/icon-152x152.png">
+
+<meta name="description" content="SmartHR - PWA Mobile Template">
+
+<meta name="theme-color" content="#2F3BA2" />
+
+<link rel="icon" href="assets/img/favicon.png" type="image/x-icon" />
+
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="assets/plugins/css/all.css">
+<link rel="stylesheet" href="assets/plugins/css/fontawesome.min.css">
+
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<div class="main-wrapper">
+<button id="butInstall" aria-label="Install" hidden>Add To Home Screen</button>
+<div class="page page-with-subnavbar tasks">
+
+<div class="navbar two-action no-hairline">
+<div class="navbar-inner d-flex align-items-center justify-content-between">
+<div class="left me-0">
+<a href="index.html" class="back link d-flex align-items-center">
+<i class="fa fa-angle-left"></i>
+<span>Back</span>
+</a>
+</div>
+<div class="sliding custom-title">Tasks</div>
+<div class="right">
+</div>
+</div>
+</div>
+
+<ul id="tabs" class="nav nav-tabs" role="tablist">
+<li class="nav-item">
+<a id="Pending" href="#pane-A" class="nav-link active" data-bs-toggle="tab" role="tab">Pending</a>
+</li>
+<li class="nav-item">
+<a id="Completed" href="#pane-B" class="nav-link" data-bs-toggle="tab" role="tab">Completed</a>
+</li>
+<li class="nav-item">
+<a id="All" href="#pane-C" class="nav-link" data-bs-toggle="tab" role="tab">All</a>
+</li>
+</ul>
+<div id="content" class="tab-content" role="tablist">
+<div id="pane-A" class="tab-pane fade show active" role="tabpanel" aria-labelledby="Pending">
+<div id="collapse-A" class="collapse show" data-parent="#content" role="tabpanel" aria-labelledby="heading-A">
+<div class="card-box">
+<div class="list task-list mt-0 task-list">
+<ul>
+<li>
+<a href="#" class="item-content add-task-link d-flex" data-bs-toggle="modal" data-bs-target="#add-task">
+<div class="item-media"><i class="material-icons">add</i></div>
+<div class="item-inner ms-3">
+<div class="item-title">Add Task</div>
+</div>
+</a>
+</li>
+<li class>
+<a href="task-view.html" class="item-content d-flex justify-content-between">
+<div class="item-media me-2">
+<span class="action-circle">
+<i class="material-icons">check</i>
+</span>
+</div>
+<div class="item-inner me-auto">
+<div class="item-title">Patient appointment booking</div>
+</div>
+<div class="item-after"> <span class="assigned-user"><img src="assets/img/user.jpg" class="rounded-circle" alt></span></div>
+</a>
+</li>
+<li class>
+<a href="task-view.html" class="item-content d-flex justify-content-between">
+<div class="item-media me-2">
+<span class="action-circle complete-btn">
+<i class="material-icons">check</i>
+</span>
+</div>
+<div class="item-inner me-auto">
+<div class="item-title">Appointment booking with payment gateway</div>
+</div>
+<div class="item-after"> <span class="assigned-user"><img src="assets/img/user.jpg" class="rounded-circle" alt></span></div>
+</a>
+</li>
+<li class>
+<a href="task-view.html" class="item-content d-flex justify-content-between">
+<div class="item-media me-2">
+<span class="action-circle">
+<i class="material-icons">check</i>
+</span>
+</div>
+<div class="item-inner me-auto">
+<div class="item-title">Patient and Doctor video conferencing</div>
+</div>
+<div class="item-after"> <span class="assigned-user"><img src="assets/img/user.jpg" class="rounded-circle" alt></span></div>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="pane-B" class="tab-pane fade" role="tabpanel" aria-labelledby="Completed">
+<div id="collapse-B" class="collapse" data-parent="#content" role="tabpanel" aria-labelledby="heading-B">
+<div class="card-box">
+<div class="list task-list mt-0 task-list">
+<ul>
+<li>
+<a href="#" class="item-content add-task-link d-flex" data-bs-toggle="modal" data-bs-target="#add-task">
+<div class="item-media"><i class="material-icons">add</i></div>
+<div class="item-inner ms-3">
+<div class="item-title">Add Task</div>
+</div>
+</a>
+</li>
+<li class>
+<a href="task-view.html" class="item-content d-flex justify-content-between">
+<div class="item-media me-2">
+<span class="action-circle">
+<i class="material-icons">check</i>
+</span>
+</div>
+<div class="item-inner me-auto">
+<div class="item-title">Appointment booking with payment gateway</div>
+</div>
+<div class="item-after"> <span class="assigned-user"><img src="assets/img/user.jpg" class="rounded-circle" alt></span></div>
+</a>
+</li>
+<li class>
+<a href="task-view.html" class="item-content d-flex justify-content-between">
+<div class="item-media me-2">
+<span class="action-circle complete-btn">
+<i class="material-icons">check</i>
+</span>
+</div>
+<div class="item-inner me-auto">
+<div class="item-title">Patient appointment booking</div>
+</div>
+<div class="item-after"> <span class="assigned-user"><img src="assets/img/user.jpg" class="rounded-circle" alt></span></div>
+</a>
+</li>
+<li class>
+<a href="task-view.html" class="item-content d-flex justify-content-between">
+<div class="item-media me-2">
+<span class="action-circle">
+<i class="material-icons">check</i>
+</span>
+</div>
+<div class="item-inner me-auto">
+<div class="item-title">Patient and Doctor video conferencing</div>
+</div>
+<div class="item-after"> <span class="assigned-user"><img src="assets/img/user.jpg" class="rounded-circle" alt></span></div>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="pane-C" class="tab-pane fade" role="tabpanel" aria-labelledby="All">
+<div id="collapse-C" class="collapse" role="tabpanel" data-parent="#content" aria-labelledby="heading-C">
+<div class="card-box">
+<div class="list task-list mt-0 task-list">
+<ul>
+<li>
+<a href="#" class="item-content add-task-link d-flex" data-bs-toggle="modal" data-bs-target="#add-task">
+<div class="item-media"><i class="material-icons">add</i></div>
+<div class="item-inner ms-3">
+<div class="item-title">Add Task</div>
+</div>
+</a>
+</li>
+<li class>
+<a href="task-view.html" class="item-content d-flex justify-content-between">
+<div class="item-media me-2">
+<span class="action-circle">
+<i class="material-icons">check</i>
+</span>
+</div>
+<div class="item-inner me-auto">
+<div class="item-title">Patient and Doctor video conferencing</div>
+</div>
+<div class="item-after"> <span class="assigned-user"><img src="assets/img/user.jpg" class="rounded-circle" alt></span></div>
+</a>
+</li>
+<li class>
+<a href="task-view.html" class="item-content d-flex justify-content-between">
+<div class="item-media me-2">
+<span class="action-circle complete-btn">
+<i class="material-icons">check</i>
+</span>
+</div>
+<div class="item-inner me-auto">
+<div class="item-title">Patient appointment booking</div>
+</div>
+<div class="item-after"> <span class="assigned-user"><img src="assets/img/user.jpg" class="rounded-circle" alt></span></div>
+</a>
+</li>
+<li class>
+<a href="task-view.html" class="item-content d-flex justify-content-between">
+<div class="item-media me-2">
+<span class="action-circle">
+<i class="material-icons">check</i>
+</span>
+</div>
+<div class="item-inner me-auto">
+<div class="item-title">Appointment booking with payment gateway</div>
+</div>
+<div class="item-after"> <span class="assigned-user"><img src="assets/img/user.jpg" class="rounded-circle" alt></span></div>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="add-task" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered" role="document">
+<div class="modal-content">
+<div class="modal-header">
+<h6 class="modal-title" id="exampleModalLabel">Add Task</h6>
+<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+</button>
+</div>
+<div class="modal-body">
+<div class="task-textarea">
+<textarea placeholder="Enter new task here." class="input-with-value"></textarea>
+</div>
+</div>
+<ul class="task-upload-action">
+<li><i class="fas fa-camera"></i></li>
+<li><i class="far fa-user-circle"></i></li>
+</ul>
+<div class="modal-footer">
+<button type="button" class="btn btn-primary" data-bs-dismiss="modal">Create</button>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+
+<script src="assets/js/jquery-3.6.0.min.js"></script>
+
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+
+<script src="assets/js/install.js"></script>
+
+<script src="assets/js/script.js"></script>
+</body>
+
+<!-- Mirrored from smarthr.dreamguystech.com/mobile/pwa/template/tasks.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 08 Sep 2023 12:52:12 GMT -->
+</html>

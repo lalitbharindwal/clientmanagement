@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from smarthr.dreamguystech.com/mobile/pwa/template/email.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 08 Sep 2023 12:52:02 GMT -->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, minimal-ui, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#3a57c4">
+<title>SmartHR - PWA HTML Mobile Template</title>
+
+<link rel="manifest" href="manifest.json">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="SmartHR - PWA Mobile Template">
+<link rel="apple-touch-icon" href="assets/img/icons/icon-152x152.png">
+
+<meta name="description" content="SmartHR - PWA Mobile Template">
+
+<meta name="theme-color" content="#2F3BA2" />
+
+<link rel="icon" href="assets/img/favicon.png" type="image/x-icon" />
+
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="assets/plugins/css/all.css">
+<link rel="stylesheet" href="assets/plugins/css/fontawesome.min.css">
+
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<div class="main-wrapper">
+<button id="butInstall" aria-label="Install" hidden>Add To Home Screen</button>
+<div class="email">
+
+<div class="navbar two-action no-hairline">
+<div class="navbar-inner d-flex align-items-center justify-content-between">
+<div class="left me-0">
+<a href="index.html" class="back link d-flex align-items-center">
+<i class="fa fa-angle-left"></i>
+<span>Back</span>
+</a>
+</div>
+<div class="sliding custom-title">Email</div>
+<div class="right me-2">
+<a href="#" class="link icon-only" data-bs-toggle="modal" data-bs-target="#create-email">
+<i class="far fa-edit"></i>
+</a>
+</div>
+</div>
+</div>
+
+<div class="page-content">
+<div class="list links-list email-list">
+<ul class="no-border pt-0 pb-0">
+<li><a href="email-list.html">Inbox</a></li>
+<li><a href="email-list.html">Starred</a></li>
+</ul>
+</div>
+<div class="list links-list email-list">
+<ul class="no-border pt-0 pb-0">
+<li><a href="email-list.html">Drafts</a></li>
+<li><a href="email-list.html">Sent</a></li>
+<li><a href="email-list.html">Trash</a></li>
+</ul>
+</div>
+<div class="list email-list">
+<ul class="no-border pt-0 pb-0">
+<li>
+<a class="item-link item-content d-flex align-items-center" href="email-list.html">
+<div class="item-media me-2"><i class="fa fa-circle text-success mail-label"></i></div>
+<div class="item-inner">
+<div class="item-title">Work</div>
+</div>
+</a>
+</li>
+<li>
+<a class="item-link item-content d-flex align-items-center" href="email-list.html">
+<div class="item-media me-2"><i class="fa fa-circle text-info mail-label"></i></div>
+<div class="item-inner">
+<div class="item-title">Office</div>
+</div>
+</a>
+</li>
+<li>
+<a class="item-link item-content d-flex align-items-center" href="email-list.html">
+<div class="item-media me-2"><i class="fa fa-circle text-danger mail-label"></i></div>
+<div class="item-inner">
+<div class="item-title">Personal</div>
+</div>
+</a>
+</li>
+<li>
+<a class="item-link item-content d-flex align-items-center" href="email-list.html">
+<div class="item-media me-2"><i class="fa fa-circle text-warning mail-label"></i></div>
+<div class="item-inner">
+<div class="item-title">Company</div>
+</div>
+</a>
+</li>
+</ul>
+</div>
+
+<div class="modal fade custom-modal-popup" id="create-email" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered" role="document">
+<div class="modal-content">
+<div class="modal-header">
+<h6 class="modal-title" id="exampleModalLabel">New Message</h6>
+<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+</button>
+</div>
+<div class="modal-body">
+<div class="list no-hairlines custom-form mt-0">
+<ul class="no-border pt-0 pb-0">
+<li class="item-content item-input">
+<div class="item-inner">
+<div class="item-title item-label">To</div>
+<div class="item-input-wrap">
+<input type="text">
+<span class="input-clear-button"></span>
+</div>
+</div>
+</li>
+<li class="item-content item-input">
+<div class="item-inner">
+<div class="item-title item-label">Cc</div>
+<div class="item-input-wrap">
+<input type="text">
+<span class="input-clear-button"></span>
+</div>
+</div>
+</li>
+<li class="item-content item-input">
+<div class="item-inner">
+<div class="item-title item-label">Bcc</div>
+<div class="item-input-wrap">
+<input type="text">
+<span class="input-clear-button"></span>
+</div>
+</div>
+</li>
+<li class="item-content item-input">
+<div class="item-inner">
+<div class="item-title item-label">Subject</div>
+<div class="item-input-wrap">
+<input type="text">
+<span class="input-clear-button"></span>
+</div>
+</div>
+</li>
+<li class="item-content item-input">
+<div class="item-inner">
+<div class="item-title item-label">Message</div>
+<div class="item-input-wrap">
+<textarea class="mail-textarea" placeholder="Enter your message here"></textarea>
+<span class="input-clear-button"></span>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-primary" data-bs-dismiss="modal" aria-label="Close">Send</button>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+
+<script src="assets/js/jquery-3.6.0.min.js"></script>
+
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+
+<script src="assets/js/install.js"></script>
+
+<script src="assets/js/script.js"></script>
+</body>
+
+<!-- Mirrored from smarthr.dreamguystech.com/mobile/pwa/template/email.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 08 Sep 2023 12:52:02 GMT -->
+</html>

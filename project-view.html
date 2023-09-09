@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from smarthr.dreamguystech.com/mobile/pwa/template/project-view.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 08 Sep 2023 12:54:18 GMT -->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, minimal-ui, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#3a57c4">
+<title>SmartHR - PWA HTML Mobile Template</title>
+
+<link rel="manifest" href="manifest.json">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="SmartHR - PWA Mobile Template">
+<link rel="apple-touch-icon" href="assets/img/icons/icon-152x152.png">
+
+<meta name="description" content="SmartHR - PWA Mobile Template">
+
+<meta name="theme-color" content="#2F3BA2" />
+
+<link rel="icon" href="assets/img/favicon.png" type="image/x-icon" />
+
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="assets/plugins/css/all.css">
+<link rel="stylesheet" href="assets/plugins/css/fontawesome.min.css">
+
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<div class="main-wrapper">
+<button id="butInstall" aria-label="Install" hidden>Add To Home Screen</button>
+<div class="project-view">
+
+<div class="navbar two-action no-hairline">
+<div class="navbar-inner d-flex align-items-center justify-content-between">
+<div class="left me-0">
+<a href="projects.html" class="back link d-flex align-items-center">
+<i class="fa fa-angle-left"></i>
+<span>Back</span>
+</a>
+</div>
+<div class="sliding custom-title">Project View</div>
+<div class="right">
+</div>
+</div>
+</div>
+
+<div class="page-content mt-0">
+<div>
+<ul id="tabs" class="nav nav-tabs" role="tablist">
+<li class="nav-item">
+<a id="Overview" href="#pane-A" class="nav-link active" data-bs-toggle="tab" role="tab">Overview</a>
+</li>
+<li class="nav-item">
+<a id="Tasks" href="#pane-B" class="nav-link" data-bs-toggle="tab" role="tab">Tasks</a>
+</li>
+<li class="nav-item">
+<a id="Files" href="#pane-C" class="nav-link" data-bs-toggle="tab" role="tab">Files</a>
+</li>
+</ul>
+<div id="content" class="tab-content" role="tablist">
+<div id="pane-A" class="tab-pane fade show active" role="tabpanel" aria-labelledby="Overview">
+<div id="collapse-A" class="collapse show" data-parent="#content" role="tabpanel" aria-labelledby="heading-A">
+<div class="project-view">
+<div class="card-box">
+<h4 class="project-title">Office Management</h4>
+<div class="m-b-15">
+<span>1</span> <span class="text-muted">open tasks, </span>
+<span>9</span> <span class="text-muted">tasks completed</span>
+</div>
+<div class="due-date"><i class="fa fa-calendar"></i> <span>June 26, 2018</span></div>
+</div>
+<div class="card-box">
+<div class="sub-title">Description :</div>
+<p class="desc-cont text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry. When an unknown printer took a galley of type and scrambled it...
+</p>
+</div>
+<div class="card-box project-box">
+<div class="pro-deadline m-b-15">
+<div class="sub-title">
+Deadline:
+</div>
+<div class="text-muted">
+8 Sep 2017
+</div>
+</div>
+<div class="project-members m-b-15">
+<div class="sub-title">Project Leader :</div>
+<ul class="team-members">
+<li>
+<a href="#"><img alt="Jeffery Lalor" src="assets/img/user.jpg"></a>
+</li>
+</ul>
+</div>
+<div class="project-members m-b-15">
+<div class="sub-title">Team :</div>
+<ul class="team-members">
+<li>
+<a href="#"><img alt="John Doe" src="assets/img/user.jpg"></a>
+</li>
+<li>
+<a href="#"><img alt="Richard Miles" src="assets/img/user.jpg"></a>
+</li>
+<li>
+<a href="#"><img alt="John Smith" src="assets/img/user.jpg"></a>
+</li>
+<li>
+<a href="#"><img alt="Mike Litorus" src="assets/img/user.jpg"></a>
+</li>
+<li>
+<a class="all-users" href="#">+15</a>
+</li>
+</ul>
+</div>
+<p class="m-b-5">Progress <span class="progress-count">40%</span></p>
+<div class="progress">
+<div class="progress-bar" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="pane-B" class="tab-pane fade" role="tabpanel" aria-labelledby="Tasks">
+<div id="collapse-B" class="collapse" data-parent="#content" role="tabpanel" aria-labelledby="heading-B">
+<div class="card-box">
+<div class="list task-list mt-0 task-list">
+<ul>
+<li>
+<a href="#" class="item-content add-task-link d-flex" data-bs-toggle="modal" data-bs-target="#add-task">
+<div class="item-media"><i class="material-icons">add</i></div>
+<div class="item-inner ms-3">
+<div class="item-title">Add Task</div>
+</div>
+</a>
+</li>
+<li class>
+<a href="task-view.html" class="item-content d-flex justify-content-between">
+<div class="item-media me-2">
+<span class="action-circle">
+<i class="material-icons">check</i>
+</span>
+</div>
+<div class="item-inner me-auto">
+<div class="item-title">Patient appointment booking</div>
+</div>
+<div class="item-after"> <span class="assigned-user"><img src="assets/img/user.jpg" class="rounded-circle" alt></span></div>
+</a>
+</li>
+<li class>
+<a href="task-view.html" class="item-content d-flex justify-content-between">
+<div class="item-media me-2">
+<span class="action-circle complete-btn">
+<i class="material-icons">check</i>
+</span>
+</div>
+<div class="item-inner me-auto">
+<div class="item-title">Appointment booking with payment gateway</div>
+</div>
+<div class="item-after"> <span class="assigned-user"><img src="assets/img/user.jpg" class="rounded-circle" alt></span></div>
+</a>
+</li>
+<li class>
+<a href="task-view.html" class="item-content d-flex justify-content-between">
+<div class="item-media me-2">
+<span class="action-circle">
+<i class="material-icons">check</i>
+</span>
+</div>
+<div class="item-inner me-auto">
+<div class="item-title">Patient and Doctor video conferencing</div>
+</div>
+<div class="item-after"> <span class="assigned-user"><img src="assets/img/user.jpg" class="rounded-circle" alt></span></div>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="pane-C" class="tab-pane fade" role="tabpanel" aria-labelledby="Files">
+<div id="collapse-C" class="collapse" role="tabpanel" data-parent="#content" aria-labelledby="heading-C">
+<div class="card-box">
+<div class="list media-list files-list mt-0">
+<ul class="row">
+<li class="col-12">
+<div class="item-content d-flex">
+<div class="item-media me-3">
+<span class="files-icon"><i class="far fa-file-pdf"></i></span>
+</div>
+<div class="item-inner">
+<div class="item-title"><strong>AHA Selfcare Mobile Application Test-Cases.xls</strong></div>
+<div class="item-subtitle"><span class="file-uploader">John Doe</span> <span class="upload-time">May 31st at 6:53 PM</span></div>
+<div class="item-text file-size">Size: 14.8Mb</div>
+</div>
+</div>
+</li>
+<li class="col-12">
+<div class="item-content d-flex">
+<div class="item-media me-3">
+<span class="files-icon"><i class="far fa-file-pdf"></i></span>
+</div>
+<div class="item-inner">
+<div class="item-title"><strong>AHA Selfcare Mobile Application Test-Cases.xls</strong></div>
+<div class="item-subtitle"><span class="file-uploader">John Doe</span> <span class="upload-time">May 31st at 6:53 PM</span></div>
+<div class="item-text file-size">Size: 14.8Mb</div>
+</div>
+</div>
+</li>
+<li class="col-12">
+<div class="item-content d-flex">
+<div class="item-media me-3">
+<span class="files-icon"><i class="far fa-file-pdf"></i></span>
+</div>
+<div class="item-inner">
+<div class="item-title"><strong>AHA Selfcare Mobile Application Test-Cases.xls</strong></div>
+<div class="item-subtitle"><span class="file-uploader">John Doe</span> <span class="upload-time">May 31st at 6:53 PM</span></div>
+<div class="item-text file-size">Size: 14.8Mb</div>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="add-task" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered" role="document">
+<div class="modal-content">
+<div class="modal-header">
+<h6 class="modal-title" id="exampleModalLabel">Add Task</h6>
+<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+</button>
+</div>
+<div class="modal-body">
+<div class="task-textarea">
+<textarea placeholder="Enter new task here." class="input-with-value"></textarea>
+</div>
+</div>
+<ul class="task-upload-action">
+<li><i class="fas fa-camera"></i></li>
+<li><i class="far fa-user-circle"></i></li>
+</ul>
+<div class="modal-footer">
+<button type="button" class="btn btn-primary" data-bs-dismiss="modal">Create</button>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+
+<script src="assets/js/jquery-3.6.0.min.js"></script>
+
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+
+<script src="assets/js/install.js"></script>
+
+<script src="assets/js/script.js"></script>
+</body>
+
+<!-- Mirrored from smarthr.dreamguystech.com/mobile/pwa/template/project-view.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 08 Sep 2023 12:54:18 GMT -->
+</html>
